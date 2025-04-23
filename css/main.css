@@ -65,17 +65,17 @@
 /* Custom Fonts */
 @font-face {
   font-family: 'HelveticaNY';
-  src: url('../moe/fonts/HelveticaNowforPANYNJ.ttf') format("truetype");
+  src: url('../fonts/HelveticaNowforPANYNJ.ttf') format("truetype");
 }
 
 @font-face {
   font-family: 'HelveticaNYSemiBold';
   font-weight: "SemiBold";
-  src: url('../moe/fonts/HelveticaNowforPANYNJSmBd.ttf') format("truetype");
+  src: url('../fonts/HelveticaNowforPANYNJSmBd.ttf') format("truetype");
 }
 
 @font-face {
   font-family: "RoadUA";
   font-weight: "Regular";
-  src: url('../moe/fonts/RoadUA-Regular.otf') format("opentype");
+  src: url('../fonts/RoadUA-Regular.otf') format("opentype");
 }
