@@ -43,6 +43,10 @@ body {
   padding: 20px;
 }
 
+#home-link {
+  margin-top: 20px;
+}
+
 .home-nav a {
   display: block;
   text-decoration: none;
