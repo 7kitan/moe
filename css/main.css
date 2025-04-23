@@ -10,8 +10,26 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Road UA';
+  src: url('../fonts/RoadUA-Bold.otf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'HelveticaNowForPANYNJ';
+  src: url('../fonts/HelveticaNowForPANYNJ-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowForPANYNJ';
+  src: url('../fonts/HelveticaNowForPANYNJ-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
 body {
-  margin: 0;
+  font-family: 'Road UA', sans-serif;
 }
 
 .flex-container {
@@ -20,11 +38,9 @@ body {
 }
 
 #desktop-sidebar {
-  font-family: 'Road UA', sans-serif;
-  height: auto;
+  height: 100vh;
   width: 200px;
   padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .home-nav a {
@@ -63,6 +79,7 @@ body {
 .project-list li {
   list-style-type: none;
   /* Remove bullets */
+  padding: 5px;
 }
 
 .project-list a {
@@ -70,12 +87,15 @@ body {
   color: #333;
 }
 
+.project-list a:hover {
+  background-color: #e28b8b;
+}
+
 .contact {
-  margin-top: 20px;
+  padding : 5px;
 }
 
 .main {
-  font-family: "Road UA", sans-serif;
   flex-grow: 1;
   padding: 40px;
   background-color: #ffffff;
