@@ -1,89 +1,76 @@
-:root {
-  /*easier to modify later */
-  --sidebar-width: 200px;
+@font-face {
+    font-family: 'Spline Sans Mono';
+    src: url('../fonts/SplineSansMono-Regular.ttf') format('truetype');
+    font-weight: normal;
 }
+
+@font-face {
+    font-family: 'Road UA';
+    src: url('../fonts/RoadUA-Regular.otf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+  margin: 0;
+}
+
 .flex-container {
   display: flex;
   height: 100vh;
-  /* full height of the viewport */
 }
 
-/* Sidebar menu */
-.sidenav {
-  height: 100%;
-    width: var(--sidebar-width);
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #b2d7fc;
-  overflow-x: hidden;
-  padding-top: 200px;
-  padding-bottom: 20px;
-
+.sidebar {
+  font-family: 'Spline Sans Mono', sans-serif;
+  height: auto;
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  /* padding for links */
-  text-decoration: none;
-  /* no underline */
-  font-size: 20px;
+.home-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom : 200px;
+}
+
+.home-nav a {
   display: block;
-  font-family: 'RoadUA', sans-serif;
-    font-weight: bold;
-  /* custom font */
-  color: #000;
-  /* text color */
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 
-.sidenav a:hover {
-  color: #00528d;
+.project-list p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.contact {
+  margin-top: 200px;
+
 }
 
 .main {
-  margin-left: var(--sidebar-width);
-  font-family: 'RoadUA', sans-serif;
-  font-weight: regular;
-    flex: 1;
-
-display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
+  font-family: "Spline Sans Mono", sans-serif;
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #ffffff;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-
-  .sidenav a {
-    font-size: 18px;
-  }
+h1 {
+  font-size: 2em;
+  color: #222;
 }
 
-/* Custom Fonts */
-@font-face {
-  font-family: 'HelveticaNY';
-  src: url('../fonts/HelveticaNowforPANYNJ.ttf') format("truetype");
+h2 {
+  font-size: 1.5em;
+  color: #444;
 }
 
-@font-face {
-  font-family: 'HelveticaNYSemiBold';
-  font-weight: "SemiBold";
-  src: url('../fonts/HelveticaNowforPANYNJSmBd.ttf') format("truetype");
-}
-
-@font-face {
-  font-family: "RoadUA";
-  font-weight: regular;
-  src: url('../fonts/RoadUA-Regular.otf') format("opentype");
-}
-
-@font-face {
-  font-family: "RoadUA";
-  font-weight: bold;
-  src: url('../fonts/RoadUA-Bold.otf') format("opentype");
+p {
+  font-size: 1em;
+  color: #666;
 }
