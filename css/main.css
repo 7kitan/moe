@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'Spline Sans Mono';
-    src: url('../fonts/SplineSansMono-Regular.ttf') format('truetype');
-    font-weight: normal;
+  font-family: 'Spline Sans Mono';
+  src: url('../fonts/SplineSansMono-Regular.ttf') format('truetype');
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Road UA';
-    src: url('../fonts/RoadUA-Regular.otf') format('truetype');
-    font-weight: normal;
+  font-family: 'Road UA';
+  src: url('../fonts/RoadUA-Regular.otf') format('truetype');
+  font-weight: normal;
 }
 
 body {
@@ -44,8 +44,7 @@ body {
 .home-nav {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  margin-bottom : 200px;
+  margin-bottom: 200px;
 }
 
 .home-nav a {
@@ -72,8 +71,7 @@ body {
 }
 
 .contact {
-  margin-top: 200px;
-
+  margin-top: 20px;
 }
 
 .main {
