@@ -1,0 +1,3 @@
+## Sidebar Ideas
+Maybe I want a good looking artcore ish sidebar...
+

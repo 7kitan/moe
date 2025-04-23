@@ -1,27 +1,25 @@
+:root {
+  /*easier to modify later */
+  --sidebar-width: 200px;
+}
 .flex-container {
   display: flex;
-  flex-direction: column;
   height: 100vh;
   /* full height of the viewport */
 }
 
 /* Sidebar menu */
 .sidenav {
-  height: auto;
-  width: 160px;
+  height: 100%;
+    width: var(--sidebar-width);
   position: fixed;
-  /* fixed sidebar stays in place on scroll */
-  z-index: 1;
-  /* ensures sidebar is on top of other content */
   top: 0;
   left: 0;
-  background-color: #f8f9fa;
-  /* light background for sidebar */
+  background-color: #b2d7fc;
   overflow-x: hidden;
-  /* prevents horizontal scroll */
-  padding-top: 20px;
-  /* space at the top */
+  padding-top: 200px;
   padding-bottom: 20px;
+
 }
 
 /* Navigation menu links */
@@ -30,9 +28,10 @@
   /* padding for links */
   text-decoration: none;
   /* no underline */
-  font-size: 16px;
+  font-size: 20px;
   display: block;
-  font-family: 'HelveticaNYSemiBold', sans-serif;
+  font-family: 'RoadUA', sans-serif;
+    font-weight: bold;
   /* custom font */
   color: #000;
   /* text color */
@@ -43,12 +42,15 @@
 }
 
 .main {
-  margin-left: 160px;
-  /* Same as the width of the sidebar */
-  padding: 0px 10px;
-
+  margin-left: var(--sidebar-width);
   font-family: 'RoadUA', sans-serif;
+  font-weight: regular;
+    flex: 1;
 
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -76,6 +78,12 @@
 
 @font-face {
   font-family: "RoadUA";
-  font-weight: "Regular";
+  font-weight: regular;
   src: url('../fonts/RoadUA-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: "RoadUA";
+  font-weight: bold;
+  src: url('../fonts/RoadUA-Bold.otf') format("opentype");
 }
